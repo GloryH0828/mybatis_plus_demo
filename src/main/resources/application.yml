@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: GloryH0828..
+    url: jdbc:mysql://39.97.170.244:3306/test?useUnicode=true&characterEncoding=UTF-8
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-enums-package:
+    com.gloryh.mybatisplus.enums
+  global-config:
+    db-config:
+      logic-not-delete-value: 0
+      logic-delete-value: 1
